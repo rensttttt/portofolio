@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo">REN<span>ADTY.</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Skills</a>
+      </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- Home section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Rendy Aditiya</h1>
+        <h1>22.83.0890</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <div class="social-media">
+          <a href=""><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-instagram-alt"></i></a>
+          <a href=""><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <a
+          href=""
+          class="btn"
+          >Download CV</a
+        >
+      </div>
+
+      <div class="home-img">
+        <img src="{{ url_for('static', filename='fotoku1.jpg') }}" alt="home" />
+      </div>
+    </section>
+    <!-- Home section end -->
+
+    <!-- About section -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="{{ url_for('static', filename='foto2.jpg') }}" alt="about" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <!-- <h3>Frontend Web Developer!</h3> -->
+        <p>
+            Saya adalah seorang Junior Sysadmin yang penuh semangat dalam menjalankan tugas-tugas teknis. Dengan keterampilan dan pengetahuan yang saya miliki, saya siap mengatasi berbagai tantangan dalam dunia teknologi informasi. Sebagai seorang Junior CyberOps, keamanan sistem menjadi prioritas utama bagi saya. Saya selalu siap untuk menanggapi ancaman keamanan dengan cepat dan efektif. Di sisi lain, sebagai seorang Junior Networking enthusiast, saya berdedikasi untuk memastikan kehandalan jaringan dan konektivitas yang lancar, demi mendukung kelancaran operasi bisnis. Saya terus belajar dan berkembang untuk menjadi seorang profesional yang lebih kompeten dan efisien
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Services section -->
+    <section class="services" id="services">
+      <h2 class="heading">Quasi <span>Skills</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <h3>Junior Sysadmin</h3>
+          <p>
+           
+Sebagai Junior Sysadmin, saya senang terlibat dalam teknologi informasi. Saya siap hadapi tantangan baru, tingkatkan pengetahuan, dan jaga keamanan sistem. Saya berkontribusi pada kesuksesan tim dengan semangat yang membara..
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <h3>Junior CyberOps</h3>
+          <p>
+            Sebagai Junior CyberOps, saya bersemangat menjaga keamanan sistem dan menanggapi ancaman dengan cepat. Saya terus belajar dan berkontribusi pada tim dengan keterampilan yang berkembang dan semangat yang tinggi.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <h3>Junior Networking</h3>
+          <p>
+            Sebagai Junior Networking, saya berdedikasi untuk memastikan konektivitas yang lancar dan kehandalan jaringan. Saya aktif dalam memperluas pengetahuan saya dan berkontribusi pada kesuksesan tim dengan semangat yang tinggi.  
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+   
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Rensttttt | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- custom js -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>
